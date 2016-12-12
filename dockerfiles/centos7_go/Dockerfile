@@ -7,9 +7,9 @@ EXPOSE 3000
 ENTRYPOINT ["/bin/bash"]
 
 Run yum -y update
-Run yum -y install vim nginx git wget curl tar sudo
+Run yum -y install vim nginx git wget curl tar sudo make gcc gcc-c++
 Run yum -y install epel-release
-Run yum -y install nodejs npm
+Run yum -y install nodejs npm redis
 
 Run wget https://download.postgresql.org/pub/repos/yum/9.6/redhat/rhel-6-x86_64/pgdg-centos96-9.6-3.noarch.rpm -P /usr/local/src/
 Run rpm -ivh /usr/local/src/pgdg-centos96-9.6-3.noarch.rpm
